@@ -6,9 +6,7 @@ import { useForm } from "react-hook-form";
 import Button from "../../../components/forms/button";
 import { useQuery } from "@tanstack/react-query";
 
-
-export default function UpdateTaskPage()
-{
+export default function UpdateTaskPage() {
     const navigate = useNavigate()
     const {id} = useParams<{id: string}>()
 
