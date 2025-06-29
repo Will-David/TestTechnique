@@ -43,7 +43,7 @@ npm run start
 
 ### Frontend
 ```bash
-cd task-back
+cd task-front
 npm install
 npm run dev
 ```
