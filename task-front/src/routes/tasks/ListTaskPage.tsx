@@ -40,18 +40,20 @@ export default function ListTaskPage() {
                             <th scope="col" className="px-6 py-3">
                                 ID
                             </th>
-                            <th scope="col" className="px-6 py-3">
+                            <th scope="col" className="px-7 py-3">
                                 TITRE
                             </th>
                             <th scope="col" className="px-6 py-3">
                                 DESCRIPTION
                             </th>
-                            <th scope="col" className="px-6 py-3">
+                            <th scope="col" className="px-7 py-3">
                                 STATUT
                             </th>
-                            <th scope="col" className="px-6 py-3">
-                                Actions
-                            </th>
+                            <div className="px-14">
+                                <th scope="col" className="px-6 py-3">
+                                    Actions
+                                </th>
+                            </div>
                         </tr>
                     </thead>
                     <tbody>
@@ -62,9 +64,9 @@ export default function ListTaskPage() {
                                 <td className="p-2 px-6">{task.description}</td>
                                 <td className="p-2 px-6">{task.status}</td>
                                 <td className="flex gap-3">
-                                    <div className="p-1.5">
+                                    <div className="p-1.5 gap-2 flex items-center justify-start bg-white text-gray-800">
                                         <Link to={routesAlias.task.update_task.replace(':id', task.id)}>
-                                            <Button 
+                                            <Button
                                                 type="button" 
                                                 className="
                                               bg-blue-500 rounded-lg 
@@ -75,7 +77,7 @@ export default function ListTaskPage() {
                                                 Modifier
                                             </Button>
                                         </Link>
-                                        <Button 
+                                        <Button
                                             type="button" 
                                             className="
                                             bg-red-500 rounded-lg 
@@ -95,6 +97,5 @@ export default function ListTaskPage() {
             </div>
         </div>
     </div>
-        
     )
 }

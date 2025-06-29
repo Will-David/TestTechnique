@@ -16,7 +16,7 @@ export default function AddTaskPage() {
         defaultValues: {
             title: '',
             description: '',
-            status: 'pending'
+            status: 'En cours'
         }
     });
     const onSubmit = async(data: TaskRequest) => {
@@ -79,8 +79,8 @@ export default function AddTaskPage() {
                                 id="status"
                                 {...register('status')}
                             >
-                                <option value="pending">En cours</option>
-                                <option value="done">Fait</option>
+                                <option value="En cours">En cours</option>
+                                <option value="Fait">Fait</option>
                             </select>
                         </div>
                         <div className="gap-2 flex items-center justify-start bg-white text-gray-800">
